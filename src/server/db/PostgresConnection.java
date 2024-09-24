@@ -59,7 +59,7 @@ import java.util.concurrent.ConcurrentLinkedDeque;
  */
 
 public class PostgresConnection extends DBConnection {
-    private final Processor passwordProcessor = new Processor();
+    private final PasswordProcessor passwordProcessor = new PasswordProcessor();
     protected PostgresConnection(String url, String login, String password) throws SQLException {
         super(url, login, password);
     }

@@ -385,19 +385,31 @@ public class ConsoleHandler {
                 ((RequestWithParameters) requestToServer).setParameters(parameters);
             }
             if (requestToServer instanceof AddRequest) {
-                this.asker.MarineCreationFromInput((AddRequest) requestToServer);
+                if (this.user instanceof GuestUser) {
+                    throw new NotAllowedCommandException("Guest users are not allowed to use this command");
+                } else {
+                    this.asker.MarineCreationFromInput((AddRequest) requestToServer);
+                }
             }
             if (requestToServer instanceof AuthenticationRequest ||  requestToServer instanceof AddUserRequest) {
                 this.asker.setAuth(requestToServer);
                 return this.sender.sendRequest(requestToServer);
             }
             if (requestToServer instanceof UpdateRequest) {
-                this.asker.updateElement((UpdateRequest) requestToServer);
+                if (this.user instanceof GuestUser) {
+                    throw new NotAllowedCommandException("Guest users are not allowed to use this command");
+                } else {
+                    this.asker.updateElement((UpdateRequest) requestToServer);
+                }
             }
             if (requestToServer instanceof ExecuteScriptRequest) {
-                this.consoleMode = ConsoleMode.FILE_READER;
-                scriptHandler.readScript(((ExecuteScriptRequest) requestToServer).getFilename());
-                return new RegardsResponse(requestToServer.getCommandName(), "Script execution initiated");
+                if (this.user instanceof GuestUser) {
+                    throw new NotAllowedCommandException("Guest users are not allowed to use this command");
+                } else {
+                    this.consoleMode = ConsoleMode.FILE_READER;
+                    scriptHandler.readScript(((ExecuteScriptRequest) requestToServer).getFilename());
+                    return new RegardsResponse(requestToServer.getCommandName(), "Script execution initiated");
+                }
             }
             if (!(requestToServer.getUser() instanceof GuestUser) && !(this.user instanceof GuestUser)) {
                 requestToServer.setUser(this.user);

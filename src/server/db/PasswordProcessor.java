@@ -9,7 +9,7 @@ import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import java.util.Random;
 
-public class Processor implements Decoder, Encoder {
+public class PasswordProcessor implements Decoder, Encoder {
     private final Random randomizer = new SecureRandom();
     @Override
     public String bytesToString(byte[] bytes) {

@@ -1,91 +1,155 @@
-сент. 23, 2024 9:33:58 AM server.managers.Logger log
-INFO: Connected: /127.0.0.1:52030
-сент. 23, 2024 9:34:09 AM server.managers.Logger log
+сент. 23, 2024 1:01:09 PM server.managers.Logger log
+INFO: Connected: /127.0.0.1:57765
+сент. 23, 2024 1:01:17 PM server.managers.Logger log
+INFO: Sent: List of available commands:
+register                            | (standart) Registers a new user.
+shuffle                             | (standart) Shuffles marines in the Imperium Army list
+clear                               | (standart) clear the Imperium Army
+filter_less_than_health             | (float health) Display every marine with amount of HP less than given
+exit                                | (standart) Close the Imperium Army management program
+remove_by_id                        | (long id) Remove marine from the Imperium Army by id
+remove_lower                        | (standart) Remove marines lower than given
+add                                 | (standart) Add a new marine to the Imperium Army
+info                                | (standart) Display information about the Imperium Army
+login                               | (standart) Authorizes the user.
+filter_contains_name                | (String name) Display marines whose 'name' field contains a given substring
+show                                | (int amount) Shows the Imperium Army list
+update                              | (long id) Update marine by id
+remove_any_by_heart_count           | (int heartCount) Remove marine with a given heart count from the Imperium Army
+remove_greater                      | (standart) Remove marines greater than given
+help                                | (standart) Display list of available commands
+
+сент. 23, 2024 1:01:25 PM server.managers.Logger log
+INFO: Sent: User authorized.
+сент. 23, 2024 1:01:37 PM server.managers.Logger log
+INFO: Sent: New marine joined the Imperium Army ranks!
+сент. 23, 2024 1:01:48 PM server.managers.Logger log
+INFO: Connected: /127.0.0.1:57825
+сент. 23, 2024 1:01:53 PM server.managers.Logger log
+INFO: Sent: List of available commands:
+register                            | (standart) Registers a new user.
+shuffle                             | (standart) Shuffles marines in the Imperium Army list
+clear                               | (standart) clear the Imperium Army
+filter_less_than_health             | (float health) Display every marine with amount of HP less than given
+exit                                | (standart) Close the Imperium Army management program
+remove_by_id                        | (long id) Remove marine from the Imperium Army by id
+remove_lower                        | (standart) Remove marines lower than given
+add                                 | (standart) Add a new marine to the Imperium Army
+info                                | (standart) Display information about the Imperium Army
+login                               | (standart) Authorizes the user.
+filter_contains_name                | (String name) Display marines whose 'name' field contains a given substring
+show                                | (int amount) Shows the Imperium Army list
+update                              | (long id) Update marine by id
+remove_any_by_heart_count           | (int heartCount) Remove marine with a given heart count from the Imperium Army
+remove_greater                      | (standart) Remove marines greater than given
+help                                | (standart) Display list of available commands
+
+сент. 23, 2024 1:01:56 PM server.managers.Logger log
 INFO: Sent: Marine: {Id:1, Name:1, Coordinates:Coordinates{x=1.0, y=1.0}, CreationDate:2024-09-23, Amount of HP:1.0, Amount of hearts: 1, Astartes Category:Astartes Category {Capable of advancing and shooting simultaneously}, Weapon:Weapon {A common anti-infantry weapon}, Chapter:Address{chapter name='1', chapter position=Location{x=1.0, y=1.0, z=1}}, ownerLogin=papa}
+Marine: {Id:2, Name:1, Coordinates:Coordinates{x=1.0, y=1.0}, CreationDate:2024-09-23, Amount of HP:1.0, Amount of hearts: 1, Astartes Category:Astartes Category {Capable of advancing and shooting simultaneously}, Weapon:Weapon {A common anti-infantry weapon}, Chapter:Address{chapter name='1', chapter position=Location{x=1.0, y=1.0, z=1}}, ownerLogin=123}
+Marine: {Id:3, Name:1, Coordinates:Coordinates{x=1.0, y=1.0}, CreationDate:2024-09-23, Amount of HP:1.0, Amount of hearts: 1, Astartes Category:Astartes Category {Capable of advancing and shooting simultaneously}, Weapon:Weapon {A common anti-infantry weapon}, Chapter:Address{chapter name='1', chapter position=Location{x=1.0, y=1.0, z=1}}, ownerLogin=1234}
+Marine: {Id:4, Name:1, Coordinates:Coordinates{x=1.0, y=1.0}, CreationDate:2024-09-23, Amount of HP:1.0, Amount of hearts: 1, Astartes Category:Astartes Category {Capable of advancing and shooting simultaneously}, Weapon:Weapon {A common anti-infantry weapon}, Chapter:Address{chapter name='1', chapter position=Location{x=1.0, y=1.0, z=1}}, ownerLogin=1234}
 
-сент. 23, 2024 9:35:21 AM server.managers.Logger log
-INFO: Connected: /127.0.0.1:52083
-сент. 23, 2024 9:36:30 AM server.managers.Logger log
-INFO: Connected: /127.0.0.1:52140
-сент. 23, 2024 9:38:52 AM server.managers.Logger log
-INFO: Connected: /127.0.0.1:52226
-сент. 23, 2024 9:39:01 AM server.managers.Logger log
+сент. 23, 2024 1:01:59 PM server.managers.Logger log
+INFO: Sent: Collection type: java.util.LinkedList
+Objects type: common.model.SpaceMarine
+Collection size: 4
+Last update date: 2024-09-23
+сент. 23, 2024 1:02:26 PM server.managers.Logger log
+INFO: Connected: /127.0.0.1:57868
+сент. 23, 2024 1:02:30 PM server.managers.Logger log
 INFO: Sent: List of available commands:
-clear                               | (standart) clear the Imperium Army
-add                                 | (standart) Add a new marine to the Imperium Army
-remove_by_id                        | (long id) Remove marine from the Imperium Army by id
-login                               | (standart) Authorizes the user.
-filter_contains_name                | (String name) Display marines whose 'name' field contains a given substring
 register                            | (standart) Registers a new user.
 shuffle                             | (standart) Shuffles marines in the Imperium Army list
-update                              | (long id) Update marine by id
-info                                | (standart) Display information about the Imperium Army
-filter_less_than_health             | (float health) Display every marine with amount of HP less than given
-remove_greater                      | (standart) Remove marines greater than given
-help                                | (standart) Display list of available commands
-remove_any_by_heart_count           | (int heartCount) Remove marine with a given heart count from the Imperium Army
-show                                | (int amount) Shows the Imperium Army list
-remove_lower                        | (standart) Remove marines lower than given
-exit                                | (standart) Close the Imperium Army management program
-
-сент. 23, 2024 9:39:32 AM server.managers.Logger log
-INFO: Sent: List of available commands:
 clear                               | (standart) clear the Imperium Army
-add                                 | (standart) Add a new marine to the Imperium Army
+filter_less_than_health             | (float health) Display every marine with amount of HP less than given
+exit                                | (standart) Close the Imperium Army management program
 remove_by_id                        | (long id) Remove marine from the Imperium Army by id
+remove_lower                        | (standart) Remove marines lower than given
+add                                 | (standart) Add a new marine to the Imperium Army
+info                                | (standart) Display information about the Imperium Army
 login                               | (standart) Authorizes the user.
 filter_contains_name                | (String name) Display marines whose 'name' field contains a given substring
-register                            | (standart) Registers a new user.
-shuffle                             | (standart) Shuffles marines in the Imperium Army list
+show                                | (int amount) Shows the Imperium Army list
 update                              | (long id) Update marine by id
-info                                | (standart) Display information about the Imperium Army
-filter_less_than_health             | (float health) Display every marine with amount of HP less than given
+remove_any_by_heart_count           | (int heartCount) Remove marine with a given heart count from the Imperium Army
 remove_greater                      | (standart) Remove marines greater than given
 help                                | (standart) Display list of available commands
-remove_any_by_heart_count           | (int heartCount) Remove marine with a given heart count from the Imperium Army
-show                                | (int amount) Shows the Imperium Army list
-remove_lower                        | (standart) Remove marines lower than given
-exit                                | (standart) Close the Imperium Army management program
 
-сент. 23, 2024 9:40:04 AM server.managers.Logger log
+сент. 23, 2024 1:02:35 PM server.managers.Logger log
+INFO: Sent: User authorized.
+сент. 23, 2024 1:03:06 PM server.managers.Logger log
+INFO: Sent: You are not an owner of that marine
+сент. 23, 2024 1:06:33 PM server.managers.Logger log
+INFO: Connected: /127.0.0.1:58120
+сент. 23, 2024 1:06:36 PM server.managers.Logger log
 INFO: Sent: List of available commands:
+register                            | (standart) Registers a new user.
+shuffle                             | (standart) Shuffles marines in the Imperium Army list
 clear                               | (standart) clear the Imperium Army
-add                                 | (standart) Add a new marine to the Imperium Army
+filter_less_than_health             | (float health) Display every marine with amount of HP less than given
+exit                                | (standart) Close the Imperium Army management program
 remove_by_id                        | (long id) Remove marine from the Imperium Army by id
+remove_lower                        | (standart) Remove marines lower than given
+add                                 | (standart) Add a new marine to the Imperium Army
+info                                | (standart) Display information about the Imperium Army
 login                               | (standart) Authorizes the user.
 filter_contains_name                | (String name) Display marines whose 'name' field contains a given substring
-register                            | (standart) Registers a new user.
-shuffle                             | (standart) Shuffles marines in the Imperium Army list
+show                                | (int amount) Shows the Imperium Army list
 update                              | (long id) Update marine by id
-info                                | (standart) Display information about the Imperium Army
-filter_less_than_health             | (float health) Display every marine with amount of HP less than given
+remove_any_by_heart_count           | (int heartCount) Remove marine with a given heart count from the Imperium Army
 remove_greater                      | (standart) Remove marines greater than given
 help                                | (standart) Display list of available commands
-remove_any_by_heart_count           | (int heartCount) Remove marine with a given heart count from the Imperium Army
-show                                | (int amount) Shows the Imperium Army list
-remove_lower                        | (standart) Remove marines lower than given
-exit                                | (standart) Close the Imperium Army management program
 
-сент. 23, 2024 9:41:07 AM server.managers.Logger log
-INFO: Connected: /127.0.0.1:52307
-сент. 23, 2024 9:41:29 AM server.managers.Logger log
-INFO: Connected: /127.0.0.1:52325
-сент. 23, 2024 9:41:34 AM server.managers.Logger log
+сент. 23, 2024 1:08:22 PM server.managers.Logger log
+INFO: Connected: /127.0.0.1:58198
+сент. 23, 2024 1:08:34 PM server.managers.Logger log
 INFO: Sent: List of available commands:
+register                            | (standart) Registers a new user.
+shuffle                             | (standart) Shuffles marines in the Imperium Army list
 clear                               | (standart) clear the Imperium Army
-add                                 | (standart) Add a new marine to the Imperium Army
+filter_less_than_health             | (float health) Display every marine with amount of HP less than given
+exit                                | (standart) Close the Imperium Army management program
 remove_by_id                        | (long id) Remove marine from the Imperium Army by id
+remove_lower                        | (standart) Remove marines lower than given
+add                                 | (standart) Add a new marine to the Imperium Army
+info                                | (standart) Display information about the Imperium Army
 login                               | (standart) Authorizes the user.
 filter_contains_name                | (String name) Display marines whose 'name' field contains a given substring
-register                            | (standart) Registers a new user.
-shuffle                             | (standart) Shuffles marines in the Imperium Army list
+show                                | (int amount) Shows the Imperium Army list
 update                              | (long id) Update marine by id
-info                                | (standart) Display information about the Imperium Army
-filter_less_than_health             | (float health) Display every marine with amount of HP less than given
+remove_any_by_heart_count           | (int heartCount) Remove marine with a given heart count from the Imperium Army
 remove_greater                      | (standart) Remove marines greater than given
 help                                | (standart) Display list of available commands
-remove_any_by_heart_count           | (int heartCount) Remove marine with a given heart count from the Imperium Army
-show                                | (int amount) Shows the Imperium Army list
-remove_lower                        | (standart) Remove marines lower than given
+
+сент. 23, 2024 1:08:40 PM server.managers.Logger log
+INFO: Sent: User authorized.
+сент. 23, 2024 1:09:33 PM server.managers.Logger log
+INFO: Connected: /127.0.0.1:58250
+сент. 23, 2024 1:09:44 PM server.managers.Logger log
+INFO: Sent: List of available commands:
+register                            | (standart) Registers a new user.
+shuffle                             | (standart) Shuffles marines in the Imperium Army list
+clear                               | (standart) clear the Imperium Army
+filter_less_than_health             | (float health) Display every marine with amount of HP less than given
 exit                                | (standart) Close the Imperium Army management program
+remove_by_id                        | (long id) Remove marine from the Imperium Army by id
+remove_lower                        | (standart) Remove marines lower than given
+add                                 | (standart) Add a new marine to the Imperium Army
+info                                | (standart) Display information about the Imperium Army
+login                               | (standart) Authorizes the user.
+filter_contains_name                | (String name) Display marines whose 'name' field contains a given substring
+show                                | (int amount) Shows the Imperium Army list
+update                              | (long id) Update marine by id
+remove_any_by_heart_count           | (int heartCount) Remove marine with a given heart count from the Imperium Army
+remove_greater                      | (standart) Remove marines greater than given
+help                                | (standart) Display list of available commands
+
+сент. 23, 2024 1:10:01 PM server.managers.Logger log
+INFO: Sent: User authorized.
+сент. 23, 2024 1:10:19 PM server.managers.Logger log
+INFO: Sent: Marine: {Id:1, Name:1, Coordinates:Coordinates{x=1.0, y=1.0}, CreationDate:2024-09-23, Amount of HP:1.0, Amount of hearts: 1, Astartes Category:Astartes Category {Capable of advancing and shooting simultaneously}, Weapon:Weapon {A common anti-infantry weapon}, Chapter:Address{chapter name='1', chapter position=Location{x=1.0, y=1.0, z=1}}, ownerLogin=papa}
+Marine: {Id:2, Name:1, Coordinates:Coordinates{x=1.0, y=1.0}, CreationDate:2024-09-23, Amount of HP:1.0, Amount of hearts: 1, Astartes Category:Astartes Category {Capable of advancing and shooting simultaneously}, Weapon:Weapon {A common anti-infantry weapon}, Chapter:Address{chapter name='1', chapter position=Location{x=1.0, y=1.0, z=1}}, ownerLogin=123}
+Marine: {Id:3, Name:1, Coordinates:Coordinates{x=1.0, y=1.0}, CreationDate:2024-09-23, Amount of HP:1.0, Amount of hearts: 1, Astartes Category:Astartes Category {Capable of advancing and shooting simultaneously}, Weapon:Weapon {A common anti-infantry weapon}, Chapter:Address{chapter name='1', chapter position=Location{x=1.0, y=1.0, z=1}}, ownerLogin=1234}
+Marine: {Id:4, Name:1, Coordinates:Coordinates{x=1.0, y=1.0}, CreationDate:2024-09-23, Amount of HP:1.0, Amount of hearts: 1, Astartes Category:Astartes Category {Capable of advancing and shooting simultaneously}, Weapon:Weapon {A common anti-infantry weapon}, Chapter:Address{chapter name='1', chapter position=Location{x=1.0, y=1.0, z=1}}, ownerLogin=1234}
 
