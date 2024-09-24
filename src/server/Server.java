@@ -42,8 +42,8 @@ public class Server {
                 new Register("register"));
         RequestProcessor requestProcessor = new RequestProcessor(commandProcessor);
         TCPServer server = new TCPServer(requestProcessor, new Logger("logs.log"));
-        //AbstractDB db = new PostgresDB("jdbc:postgresql://localhost:5432/studs", "postgres", "12345");
-        AbstractDB db = new PostgresDB("jdbc:postgresql://pg:5432/studs", "s408454", "KjNxnfuHCrXlbafE");
+        AbstractDB db = new PostgresDB("jdbc:postgresql://localhost:5432/studs", "postgres", "12345");
+        //AbstractDB db = new PostgresDB("jdbc:postgresql://pg:5432/studs", "s408454", "KjNxnfuHCrXlbafE");
         try {
             DBConnection connection = db.createConnection();
             collectionProcessor.setConnection(connection);

@@ -378,17 +378,26 @@ public class ConsoleHandler {
             String[] processed = splitUserRequest(request);
             AbstractRequest requestToServer = this.requestHandler.get(processed[0]);
             if (requestToServer instanceof RequestWithParameters) {
-                String[] parameters = new String[processed.length-1];
-                for (int i = 1; i < processed.length; i++) {
-                    parameters[i-1] = processed[i];
+                if (this.user instanceof GuestUser) {
+                    throw new NotAllowedCommandException("Guest users are not allowed to use this command");
+                } else {
+                    String[] parameters = new String[processed.length-1];
+                    for (int i = 1; i < processed.length; i++) {
+                        parameters[i-1] = processed[i];
+                    }
+                    ((RequestWithParameters) requestToServer).setParameters(parameters);
                 }
-                ((RequestWithParameters) requestToServer).setParameters(parameters);
             }
             if (requestToServer instanceof AddRequest) {
                 if (this.user instanceof GuestUser) {
                     throw new NotAllowedCommandException("Guest users are not allowed to use this command");
                 } else {
                     this.asker.MarineCreationFromInput((AddRequest) requestToServer);
+                }
+            }
+            if (requestToServer instanceof ClearRequest || requestToServer instanceof ShuffleRequest) {
+                if (this.user instanceof GuestUser) {
+                    throw new NotAllowedCommandException("Guest users are not allowed to use this command");
                 }
             }
             if (requestToServer instanceof AuthenticationRequest ||  requestToServer instanceof AddUserRequest) {
